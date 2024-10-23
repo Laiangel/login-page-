@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ececec;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box-area {
+    width: 930px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+}
+
+.left-box {
+    background-color: #103cbe;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.right-box {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+input {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #103cbe;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0d35a7;
+}
+
+.btn-light {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.forgot a {
+    color: #103cbe;
+    text-decoration: none;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+.rounded-4 {
+    border-radius: 20px;
+}
+
+.rounded-5 {
+    border-radius: 30px;
+}
+
+::placeholder {
+    font-size: 16px;
+    color: #999;
+}
+
+@media only screen and (max-width: 768px) {
+    .box-area {
+        width: 100%;
+        margin: 0 20px;
+        flex-direction: column;
+    }
+
+    .left-box {
+        height: 200px;
+        padding: 20px;
+    }
+
+    .right-box {
+        padding: 20px;
+    }
+
+    img {
+        width: 150px;
+    }
+}
+
